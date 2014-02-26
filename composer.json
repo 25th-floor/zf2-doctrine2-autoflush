@@ -11,6 +11,8 @@
 		"doctrine/doctrine-module": "*"
 	},
 	"autoload": {
-		"psr-0": { "TwentyFifth\\Zf2RepositoryInitializer\\": "src/" }
+		"psr-4": {
+			"TwentyFifth\\Doctrine\\Listener\\": "src/"
+		}
 	}
 }
