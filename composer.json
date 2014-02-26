@@ -1,0 +1,16 @@
+{
+	"name": "25th/zf2-doctrine2-autoflush",
+	"authors": [
+		{
+			"name": "Martin Prebio",
+			"email": "mp@25th-floor.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4",
+		"doctrine/doctrine-module": "*"
+	},
+	"autoload": {
+		"psr-0": { "TwentyFifth\\Zf2RepositoryInitializer\\": "src/" }
+	}
+}
