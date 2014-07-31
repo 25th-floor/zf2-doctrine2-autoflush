@@ -38,7 +38,9 @@ class AutoFlushListener
 	{
 		/** @var EntityManager $em */
 		$em = $e->getApplication()->getServiceManager()->get('Doctrine\ORM\EntityManager');
-		$em->flush();
+		if ($em->isOpen()) {
+			$em->flush();
+		}
 	}
 
 	/**
